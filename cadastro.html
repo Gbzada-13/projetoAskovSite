@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ASKOV | Cadastro</title>
+    <link rel="stylesheet" href="styleCadastro.css">
+</head>
+<body>
+    <div class="minhaDiv1">
+        <h2>Cadastre-se</h2>
+        <div class="inputs">
+            <label for="campoNome">Nome</label>
+            <input type="text" placeholder="Digite seu nome" id="nome" class="campoNome">
+            <p></p>
+            <label for="campoSenha">Senha</label>
+            <input type="password" placeholder="Crie uma senha" id="senha" class="campoSenha">
+        </div>    
+        <a href="telaInicial.html"><button onclick="fazerCadastro()" class="botãoCadastro">Confirmar</button></a>
+        <div class="linkLog">
+            <p>Já tem uma conta?</p>
+            <a href="login.html">Login</a>
+        </div>
+    </div>
+    <script src="cadastro.js" defer ></script>
+</body>
+</html>

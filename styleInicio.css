@@ -1,0 +1,106 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body {
+    background-color: rgb(39, 39, 39);
+}
+header {
+    background-color: black;
+    display: flex;
+    justify-content: flex-end;
+    padding: 20px;
+}
+header h1 {
+    color: whitesmoke;
+    padding-right: 600px;
+}
+.patrocinadores {
+    background-color: transparent;
+    width: 100px;
+    padding-right: 130px;
+}
+.patrocinadores button {
+    width: 100px;
+    padding: 10px;
+    border: none;
+    background-color: transparent;
+}
+.patrocinadores a {
+    text-decoration: none;
+    color: whitesmoke;
+}
+.patrocinadores a:hover {
+    color: grey;
+}
+.campeonatos {
+    background-color: transparent;
+    width: 100px;
+}
+.campeonatos button {
+    width: 100px;
+    padding: 10px;
+    border: none;
+    background-color: transparent;
+}
+.campeonatos a {
+    text-decoration: none;
+    color: whitesmoke;
+}
+.campeonatos a:hover {
+    color: grey;
+}
+.sobre {
+    background-color: transparent;
+    width: 100px;
+}
+.sobre button {
+    width: 100px;
+    padding: 10px;
+    border: none;
+    background-color: transparent;
+}
+.sobre a {
+    text-decoration: none;
+    color: whitesmoke;
+}
+.sobre a:hover {
+    color: grey;
+}
+.botão-cadastro {
+    background-color: transparent;
+    width: 100px;
+    padding-left: 10px;
+}
+.botão-cadastro button {
+    width: 100px;
+    padding: 10px;
+    border: none;
+    border-radius: 15px;
+    cursor: pointer;
+}
+.botão-cadastro button:hover {
+    background-color: rgb(155, 155, 155);
+    transition: 0.5s;
+}
+.botão-login {
+    background-color: transparent;
+    width: 100px;
+
+}
+.botão-login button {
+    width: 100px;
+    padding: 9px;
+    border-style: solid;
+    border-color: white;
+    border-radius: 15px;
+    cursor: pointer;
+    color: white;
+    background-color: transparent;
+}
+.botão-login button:hover {
+    background-color: white;
+    color: black;
+    transition: 0.5s;
+}
