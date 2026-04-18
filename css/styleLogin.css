@@ -1,0 +1,172 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: "Poppins", sans-serif; 
+    background-color: rgb(37, 37, 37);
+    height: 100vh;
+    width: 100vw;
+    display: flex;
+    align-items: center; /* Centraliza a caixa no meio vertical */
+    justify-content: center; /* Centraliza a caixa no meio horizontal */
+    margin: 0;
+    overflow: hidden; /* Remove a barra de rolagem chata embaixo e do lado */
+}
+
+header {
+    background-color: black;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    padding: 10px 40px; /* Reduzi o padding vertical para diminuir a altura do preto */
+    height: 70px; /* Altura fixa igual ao início */
+    width: 100%;
+    
+    /* ISSO FAZ O HEADER NÃO EMPURRAR A CAIXA PARA BAIXO */
+    position: absolute; 
+    top: 0;
+    left: 0;
+    z-index: 10;
+}
+
+/* Coloquei o link ali, então tive que ajustar aqui*/
+.logo-link {
+    text-decoration: none;
+    margin-right: auto; 
+}
+
+header h1 {
+    color: whitesmoke;
+    margin-right: auto; 
+    font-size: 24px;
+    margin: 0; /* Remove margens extras que podem desalinhá-lo verticalmente */
+}
+
+/* Links do Meio */
+.patrocinadores, .campeonatos, .sobre {
+    margin-right: 20px;
+}
+
+header button {
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+    padding: 10px;
+}
+
+header a {
+    text-decoration: none;
+    color: whitesmoke;
+    font-size: 14px;
+}
+
+.patrocinadores a:hover, 
+.campeonatos a:hover, 
+.sobre a:hover {
+    color: grey;
+}
+
+.botão-login {
+    margin-right: 15px !important; /* Cria o espaço entre o 'Login' e o 'Cadastre-se' */
+}
+
+/* Botões da Direita */
+.botão-login button {
+    width: 100px;
+    padding: 8px;
+    border: 1px solid white;
+    border-radius: 15px;
+    background-color: transparent;
+    color: white;
+}
+
+.botão-login button:hover {
+    background-color: white;
+    color: black;
+}
+
+.botão-cadastro button {
+    width: 110px;
+    padding: 8px;
+    border: none;
+    border-radius: 15px;
+    background-color: white;
+    color: black;
+}
+
+.botão-cadastro button:hover {
+    background-color: rgb(155, 155, 155);
+}
+
+
+/* ============================================================
+   TELA DE LOGIN MANTIDA
+   ============================================================ */
+
+
+.minhaDiv2 {
+    background-color: rgb(68, 68, 68);
+    width: 400px;
+    height: 450px; 
+    border-radius: 10px;
+    box-shadow: 0 0 15px rgba(0,0,0,0.5);
+    display: grid;
+    place-items: center;
+    padding: 20px 0;
+}
+
+.minhaDiv2 h2 {
+    text-align: center;
+    color: rgb(20, 20, 20);
+    text-shadow: 0 3px 10px #282829;
+}
+
+.inputsL {
+    display: grid; 
+    gap: 10px;    
+    justify-items: center;
+    width: 85%;
+}
+
+.inputsL label {
+    font-size: 15px;
+    color: dimgrey;
+    justify-self: start; 
+    margin-left: 5%;
+}
+
+.inputsL input {
+    width: 90%;
+    padding: 15px;
+    border: none;
+    background-color: rgb(34, 34, 34);
+    border-radius: 10px;
+    color: white;
+}
+
+p#senha-incorreta {
+    color: rgb(189, 20, 20);
+    font-size: 14px;
+    height: 20px; 
+}
+
+.inputsL a {
+    color: #2575fc;
+    text-decoration: none;
+    font-size: 13px;
+    justify-self: end;
+    margin-right: 5%;
+}
+
+.minhaDiv2 button {
+    width: 80%;
+    padding: 14px;
+    border-radius: 15px;
+    background: linear-gradient(135deg, #6a11cb, #2575fc );
+    color: white;
+    border: none;
+    cursor: pointer;
+}

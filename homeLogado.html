@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ASKOV | Home</title>
+    <link rel="stylesheet" href="css/styleHomeLogado.css"> 
+</head>
+<body>
+    <header>
+        <a href="homeLogado.html" class="logo-link"><h1>ASKOV</h1></a>
+        
+        <div class="patrocinadores"><button><a href="#">Patrocinadores</a></button></div>
+        <div class="campeonatos"><button><a href="#">Campeonatos</a></button></div>
+        <div class="sobre"><button><a href="#">Sobre</a></button></div>
+
+        <div class="user-info">
+            <span class="user-name" id="nomeUsuario">Usuário</span>
+            <button class="btn-sair" onclick="deslogar()">Sair</button>
+        </div>
+    </header>
+
+    <main class="content-logado">
+        <h1 id="bemVindoMensagem">Bem-vindo!</h1>
+        <p>Painel de gerenciamento ASKOV carregado com sucesso.</p>
+    </main>
+
+    <script src="js/homeLogado.js"></script>
+</body>
+</html>

@@ -4,24 +4,41 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>ASKOV | Cadastro</title>
-    <link rel="stylesheet" href="styleCadastro.css">
+    <link rel="stylesheet" href="css/styleCadastro.css">
 </head>
 <body>
+    <header class="cabeçalho">
+        <a href="telaInicial.html" class="logo-link"><h1>ASKOV</h1></a>
+        <div class="patrocinadores"><button><a href="#">Patrocinadores</a></button></div>
+        <div class="campeonatos"><button><a href="#">Campeonatos</a></button></div>
+        <div class="sobre"><button><a href="#">Sobre</a></button></div>
+        <div class="botão-login"><a href="login.html"><button>Login</button></a></div>
+        <div class="botão-cadastro"><a href="cadastro.html"><button>Cadastre-se</button></a></div>
+    </header>
     <div class="minhaDiv1">
         <h2>Cadastre-se</h2>
         <div class="inputs">
-            <label for="campoNome">Nome</label>
+            <label for="nome">Nome</label>
             <input type="text" placeholder="Digite seu nome" id="nome" class="campoNome">
-            <p></p>
-            <label for="campoSenha">Senha</label>
+            
+            <label for="dataNasc">Data de Nascimento</label>
+            <input type="date" id="dataNasc" class="campoData">
+
+            <label for="cpf">CPF</label>
+            <input type="text" placeholder="000.000.000-00" id="cpf" class="campoCpf" maxlength="14">
+
+            <label for="senha">Senha</label>
             <input type="password" placeholder="Crie uma senha" id="senha" class="campoSenha">
+
+            <label for="confirmeSenha">Senha</label>
+            <input type="password" placeholder="Repita a senha" id="senha" class="campoConfirmeSenha">
         </div>    
-        <a href="telaInicial.html"><button onclick="fazerCadastro()" class="botãoCadastro">Confirmar</button></a>
+        <button onclick="fazerCadastro()" class="botãoCadastro">Confirmar</button>
         <div class="linkLog">
             <p>Já tem uma conta?</p>
             <a href="login.html">Login</a>
         </div>
     </div>
-    <script src="cadastro.js" defer ></script>
+    <script src="js/cadastro.js" defer></script>
 </body>
 </html>

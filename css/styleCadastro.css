@@ -1,0 +1,177 @@
+/* RESET BÁSICO*/
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: "Poppins", sans-serif; 
+    background-color: rgb(37, 37, 37);
+    height: 100vh;
+    width: 100vw;
+    display: flex;
+    align-items: center;    /* Centraliza a caixa no meio vertical */
+    justify-content: center; /* Centraliza a caixa no meio horizontal */
+    margin: 0;
+    overflow-x: hidden; /* Evita barra lateral chata */
+}
+
+/* CABEÇALHO (O HEADER) */
+header {
+    background-color: black;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    padding: 0 40px;
+    height: 70px;
+    width: 100%;
+    position: absolute; /* Faz o header flutuar */
+    top: 0;
+    left: 0;
+    z-index: 10;
+}
+
+.logo-link {
+    text-decoration: none;
+    margin-right: auto; 
+}
+
+header h1 {
+    color: whitesmoke;
+    font-size: 24px;
+    margin: 0;
+}
+
+header h1:hover {
+    color: grey;
+    transition: 0.3s;
+}
+
+/* Links do Meio */
+.patrocinadores, .campeonatos, .sobre {
+    margin-right: 20px;
+}
+
+header button {
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+    padding: 10px;
+}
+
+header a {
+    text-decoration: none;
+    color: whitesmoke;
+    font-size: 14px;
+}
+
+header a:hover {
+    color: grey;
+    transition: 0.3s;
+}
+
+/* Botões da Direita */
+.botão-login {
+    margin-right: 15px;
+}
+
+.botão-login button:hover {
+    background-color: white;
+    color: black;
+}
+
+header .botão-login button {
+    width: 100px;
+    padding: 8px;
+    border: 1px solid white;
+    border-radius: 15px;
+    background-color: transparent;
+    color: white;
+}
+
+header .botão-cadastro button {
+    width: 110px;
+    padding: 8px;
+    border: none;
+    border-radius: 15px;
+    background-color: white;
+    color: black;
+    font-weight: bold;
+}
+
+.botão-cadastro button:hover {
+    background-color: rgb(155, 155, 155);
+}
+
+/* CAIXA DE CADASTRO (A PARTE CINZA) */
+.minhaDiv1 {
+    background-color: rgb(68, 68, 68);
+    width: 400px;
+    height: 560px; 
+    border-radius: 10px;
+    box-shadow: 0 0 15px rgba(0,0,0,0.5);
+    display: grid; 
+    place-items: center;
+    padding: 20px 0;
+    margin-top: 70px; /* Garante que ela não comece DEBAIXO do header */
+}
+
+.minhaDiv1 h2 {
+    text-align: center;
+    color: rgb(20, 20, 20);
+    text-shadow: 0 3px 10px #282829;
+}
+
+.inputs {
+    justify-content: center;
+    width: 85%;
+}
+
+.inputs label {
+    font-size: 15px;
+    color: dimgrey;
+}
+
+.inputs input {
+    width: 90%;
+    padding: 13px;
+    border: none;
+    background-color: rgb(34, 34, 34);
+    border-radius: 10px;
+    font-size: 15px;
+    box-shadow: 0 3px 10px rgba(0,0,0,0.5);
+    outline: none;
+    color: white;
+    margin-bottom: 5px;
+}
+
+/* Botão de Gradiente */
+.minhaDiv1 button {
+    width: 80%;
+    padding: 14px;
+    background: linear-gradient(135deg, #6a11cb, #2575fc );
+    color: white;
+    border-radius: 15px;
+    border: none;
+    cursor: pointer;
+}
+
+/* AJUSTE PARA TELAS PEQUENAS (RESPONSIVIDADE) */
+@media (max-height: 700px) {
+    body {
+        height: auto;
+        min-height: 100vh;
+        display: flex;
+        flex-direction: column; /* Empilha header e div */
+        overflow-y: auto;
+    }
+    
+    header {
+        position: relative; /* Para de flutuar e ocupa espaço */
+    }
+
+    .minhaDiv1 {
+        margin: 20px 0; /* Dá um respiro em cima e embaixo */
+    }
+}

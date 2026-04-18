@@ -1,0 +1,94 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: rgb(39, 39, 39);
+    font-family: sans-serif; /* adicionei isso para um visual mais moderno */
+}
+
+header {
+    background-color: black;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center; /* Alinhei essa parte verticalmente o H1 e os botões */
+    padding: 10px 40px; /* coloquei um Padding mais equilibrado */
+}
+
+header h1 {
+    color: whitesmoke;
+    /* Em vez de 600px fixos que vc estava tentando aquele dia burrão, usei margin-right: auto.
+       Isso faz o H1 ficar na esquerda e os botões na direita,
+       independente do tamanho da tela. */
+    margin-right: auto; 
+    font-size: 24px;
+}
+
+/* Agrupei eles todos, se foda, Removi as larguras fixas de 100px que podiam esmagar o texto */
+.patrocinadores, .campeonatos, .sobre {
+    background-color: transparent;
+    margin-right: 20px; /* espacei eles uniforme entre os links */
+}
+
+.patrocinadores button, 
+.campeonatos button, 
+.sobre button {
+    padding: 10px;
+    border: none;
+    background-color: transparent;
+    cursor: pointer;
+}
+
+.patrocinadores a, 
+.campeonatos a, 
+.sobre a {
+    text-decoration: none;
+    color: whitesmoke;
+    font-weight: 500;
+    transition: 0.3s;
+}
+
+.patrocinadores a:hover, 
+.campeonatos a:hover, 
+.sobre a:hover {
+    color: grey;
+}
+
+/* Estilo dos Botões de Ação (Login e Cadastro) */
+.botão-login {
+    margin-right: 10px;
+}
+
+.botão-login button {
+    width: 100px;
+    padding: 9px;
+    border: 2px solid white; /* Ajuste: Borda um pouco mais visível */
+    border-radius: 15px;
+    cursor: pointer;
+    color: white;
+    background-color: transparent;
+    font-weight: bold;
+    transition: 0.5s;
+}
+
+.botão-login button:hover {
+    background-color: white;
+    color: black;
+}
+
+.botão-cadastro button {
+    width: 110px; /* Ajuste: Um pouco maior para o texto não apertar */
+    padding: 10px;
+    border: none;
+    border-radius: 15px;
+    cursor: pointer;
+    background-color: whitesmoke;
+    font-weight: bold;
+    transition: 0.5s;
+}
+
+.botão-cadastro button:hover {
+    background-color: rgb(155, 155, 155);
+}
