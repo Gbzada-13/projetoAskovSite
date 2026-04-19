@@ -160,6 +160,9 @@ p#senha-incorreta {
     justify-self: end;
     margin-right: 5%;
 }
+.inputsL a:hover {
+    text-decoration: underline;
+}
 
 .minhaDiv2 button {
     width: 80%;
@@ -169,4 +172,10 @@ p#senha-incorreta {
     color: white;
     border: none;
     cursor: pointer;
+    transition: 0.3s;
+}
+.minhaDiv2 button:hover {
+    transform: translateY(-3px);
+    transition: 0.3s;
+    box-shadow: 5px 5px 15px #2568db;
 }
